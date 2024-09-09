@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let currentSlidev1 = 0;
 
     function showSlidev1(index) {
-        const slideses = document.querySelector('.slidered-items'); 
-        const totalSlide = document.querySelectorAll('.slidered-items .item').length;
-        console.log(totalSlide);
+        const slideses = document.querySelector('.slidered-items');
+
+        // console.log(totalSlide);
         if (index >= 2) {
             currentSlidev1 = 0;
         } else if (index < 0) {
@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             currentSlidev1 = index;
         }
-        console.log(currentSlidev1);
-        slideses.style.transform = `translateX(-${currentSlidev1 * 100}%)`; 
+        // console.log(currentSlidev1);
+        slideses.style.transform = `translateX(-${currentSlidev1 * 100}%)`; // dịch chuyển theo trục oxy
     }
 
     function nextSlidev1() {
@@ -30,4 +30,3 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("nextButton").addEventListener("click", nextSlidev1);
     document.getElementById("prevButton").addEventListener("click", prevSlidev1);
 });
-
