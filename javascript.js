@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
             currentSlidev1 = index;
         }
         // console.log(currentSlidev1);
-        slideses.style.transform = `translateX(-${currentSlidev1 * 100}%)`; // dịch chuyển theo trục oxy
+        slideses.style.transform = `translateX(-${currentSlidev1 * 100}%)`;
     }
 
     function nextSlidev1() {
